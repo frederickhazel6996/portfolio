@@ -1,0 +1,157 @@
+@import '../../base.scss';
+
+.first__section {
+    color: $primary-color-dark;
+    margin-top: 50px;
+    // min-height: 100px;
+    /*  background-color: red; */
+    .first__section__image {
+        height: 280px;
+        width: 270px;
+        // float: left;
+        background: hsla(28, 100%, 65%, 1);
+
+        background: linear-gradient(
+            180deg,
+            hsla(28, 100%, 65%, 1) 0%,
+            hsla(28, 100%, 87%, 1) 100%
+        );
+
+        background: -moz-linear-gradient(
+            180deg,
+            hsla(28, 100%, 65%, 1) 0%,
+            hsla(28, 100%, 87%, 1) 100%
+        );
+
+        background: -webkit-linear-gradient(
+            180deg,
+            hsla(28, 100%, 65%, 1) 0%,
+            hsla(28, 100%, 87%, 1) 100%
+        );
+
+        border-radius: 25px;
+    }
+
+    .work__button {
+        width: 200px;
+        color: white;
+    }
+
+    .my__cv {
+        box-shadow: 10px 4px 37px -13px rgba(255, 160, 77, 0.75);
+        -webkit-box-shadow: 10px 4px 37px -13px rgba(255, 160, 77, 0.75);
+        -moz-box-shadow: 10px 4px 37px -13px rgba(255, 160, 77, 0.75);
+    }
+
+    .header__image {
+        text-align: center;
+        @include media-breakpoint-down(lg) {
+            margin-top: 80px;
+        }
+    }
+    .first__section__header {
+        font-size: 25px;
+        font-weight: 500;
+
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+        }
+    }
+    .first__section__secondary {
+        font-size: 30px;
+        font-weight: 500;
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+        }
+    }
+    .first__section__buttons {
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+        }
+    }
+}
+
+.second__section {
+    margin-top: 100px;
+
+    .second__section__header {
+        font-size: 27px;
+        font-weight: 550;
+        @include media-breakpoint-down(xl) {
+            text-align: center;
+        }
+    }
+
+    .second__section__secondary__header {
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .second__section__images__container {
+        text-align: center;
+    }
+    .second__section__images {
+        height: 50px;
+    }
+    .second__section__secondary {
+        text-align: center;
+    }
+}
+
+.third__section {
+    margin-top: 150px;
+
+    .third__section__image {
+        height: 500px;
+    }
+
+    .third__section__image__container {
+        text-align: center;
+        @include media-breakpoint-down(xl) {
+            display: none;
+        }
+    }
+
+    .third__section__header {
+        font-size: 27px;
+        font-weight: 550;
+        @include media-breakpoint-down(xl) {
+            text-align: center;
+        }
+    }
+    .third__section__icons {
+        text-align: center;
+        img {
+            height: 35px;
+        }
+        i {
+            font-size: 50px;
+        }
+        p {
+            font-size: 10px;
+        }
+        .intel {
+            height: 20px !important;
+        }
+    }
+    .dev__icons {
+        text-align: center;
+    }
+
+    .icons__inline {
+        display: inline-block;
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    background-color: $primary-color;
+    color: white;
+
+    &:hover {
+        color: white;
+    }
+}
