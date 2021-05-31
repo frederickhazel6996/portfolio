@@ -1,5 +1,4 @@
 export const NavbarIcon = require('../Assets/Images/hazel.svg').default;
-export const HeaderImage = require('../Assets/Images/a.jpeg').default;
 export const ServerImage = require('../Assets/Images/server.svg').default;
 export const Server1Image = require('../Assets/Images/server1.svg').default;
 export const FrontendImage = require('../Assets/Images/ux.svg').default;
@@ -30,3 +29,4 @@ export const Intel = require('../Assets/Images/intellijidea.svg').default;
 export const Meister = require('../Assets/Images/meister.png').default;
 export const Wix = require('../Assets/Images/wix.svg').default;
 export const Webpack = require('../Assets/Images/webpack.svg').default;
+export const Flutter = require('../Assets/Images/flutter-logo.svg').default;

@@ -28,7 +28,8 @@ import {
     Intel,
     Adobe,
     VS,
-    Meister
+    Meister,
+    Flutter
 } from '../../Utils/values';
 import { backToTop } from '../../Utils/methods';
 import $ from 'jquery';
@@ -105,9 +106,13 @@ const Home = () => {
                                 Backend Web Development
                             </div>
                             <div className="second__section__secondary mt-2">
-                                I build,maintain and deploy robust and secure
-                                Web APIS with Express JS,Java Spring and several
-                                database technologies.
+                                I have great skills in
+                                building,testing,maintaining and deploying
+                                robust and secure Web APIs using{' '}
+                                <span className="focus__text">
+                                    Express JS,Java Spring
+                                </span>{' '}
+                                and several database technologies.
                             </div>
                         </div>
                         <div className="col-12 col-lg-4 mb-2 fadeIn">
@@ -122,11 +127,14 @@ const Home = () => {
                                 Frontend Web Development
                             </div>
                             <div className="second__section__secondary mt-2">
-                                Do you need a beautiful and responsive
-                                website/webapp ? I build beautiful frontend
-                                systems with react JS/bootstrap css/Chakra
-                                UI,etc. I also handle the integration of
-                                frontend apps with APIs
+                                I build seamlessly aesthetic and responsive
+                                frontend systems with{' '}
+                                <span className="focus__text ">
+                                    React JS, Next, Chakra UI
+                                </span>{' '}
+                                and other modern framework and tools. I also
+                                handle the integration of frontend web apps with
+                                APIs.
                             </div>
                         </div>
                         <div className="col-12 col-lg-4 mb-2 fadeIn">
@@ -141,9 +149,61 @@ const Home = () => {
                                 Wix e-commerce Design and Setup
                             </div>
                             <div className="second__section__secondary mt-2">
-                                Are you an eCommerce store owner? I can help you
-                                design & build fully custom landing pages,
-                                product & collection pages.
+                                I can take your business a step further by
+                                getting your shop online. This, I will do by
+                                designing and building a fully-functional
+                                e-commerce shop with payment integrations, using{' '}
+                                <span className="focus__text">
+                                    Wix or Shopify.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="secondSection">
+                <div className="container second__section">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="second__section__header">
+                                Extra Skills
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row mt-5">
+                        <div className="col-12 col-lg-4 mb-2 fadeIn">
+                            <div className="second__section__images__container">
+                                <img
+                                    src={Adobe}
+                                    alt="server"
+                                    className="second__section__images"
+                                />
+                            </div>
+                            <div className="second__section__secondary__header mt-2">
+                                UI/UX
+                            </div>
+                            <div className="second__section__secondary mt-2">
+                                I design and create web and mobile user
+                                interfaces that ensure that the user has a
+                                thrilling experience using{' '}
+                                <span className="focus__text">Adobe XD.</span>
+                            </div>
+                        </div>
+                        <div className="col-12 col-lg-4 mb-2 fadeIn">
+                            <div className="second__section__images__container">
+                                <img
+                                    src={Flutter}
+                                    alt="server"
+                                    className="second__section__images"
+                                />
+                            </div>
+                            <div className="second__section__secondary__header mt-2">
+                                Mobile Development
+                            </div>
+                            <div className="second__section__secondary mt-2">
+                                I design and build cross-platform mobile
+                                applications using{' '}
+                                <span className="focus__text">Flutter.</span>
                             </div>
                         </div>
                     </div>
@@ -235,6 +295,12 @@ const Home = () => {
                                     <div className="third__section__icons">
                                         <img src={Nextjs} alt="Next JS" />
                                         <p className="mt-2">Next JS</p>
+                                    </div>
+                                </li>
+                                <li className="icons__inline me-3">
+                                    <div className="third__section__icons">
+                                        <img src={Flutter} alt="Flutter" />
+                                        <p className="mt-2">Flutter</p>
                                     </div>
                                 </li>
                                 <li className="icons__inline me-3">
