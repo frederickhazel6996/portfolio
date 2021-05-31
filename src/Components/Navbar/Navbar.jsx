@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { NavbarIcon } from '../../Utils/values';
 import { scrollProgressBar } from '../../Utils/methods';
 import './index.scss';
 
@@ -14,7 +13,7 @@ const Navbar = () => {
                     <div className="container ">
                         <nav className="navbar  navbar-expand-lg ">
                             <div className="container-fluid">
-                                <a className="navbar-brand " href="#">
+                                <a className="navbar-brand " href="/">
                                     Frederick Hazel
                                 </a>
                                 <button
@@ -42,12 +41,16 @@ const Navbar = () => {
                                         </li>
 
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#">
+                                            <a
+                                                className="nav-link"
+                                                href="#fourthSection">
                                                 My Work
                                             </a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#">
+                                            <a
+                                                className="nav-link"
+                                                href="#fifthSection">
                                                 Contact
                                             </a>
                                         </li>

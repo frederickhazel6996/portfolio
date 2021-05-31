@@ -2,46 +2,41 @@
 import React, { useEffect } from 'react';
 import Navbar from '../../Components/Navbar/Navbar';
 import {
-    Webpack,
-    Wix,
     ServerImage,
     FrontendImage,
     WixImage,
     Server1Image,
-    GraphQL,
-    Nextjs,
-    MongoDB,
-    Html,
-    Digital,
-    Bootstrap,
-    ReactImage,
-    Spring,
-    Java,
-    JavaScript,
-    Sass,
-    PG,
-    Heroku,
-    AWS,
-    Chakra,
-    Express,
-    Postman,
-    Intel,
     Adobe,
-    VS,
     Meister,
-    Flutter
+    Flutter,
+    Languages
 } from '../../Utils/values';
 import { backToTop } from '../../Utils/methods';
-import $ from 'jquery';
 import './index.scss';
 import './animate.scss';
-import useInView from 'react-cool-inview';
+// import useInView from 'react-cool-inview';
 
 const Home = () => {
     useEffect(() => {
         backToTop();
     }, []);
 
+    const LanguagesFrameworks = Languages.map((languages, index) => (
+        <li className="icons__inline me-3" key={index}>
+            <div className="third__section__icons">
+                {languages.type === 'extra' ? (
+                    <img
+                        src={languages.img}
+                        alt={languages.item}
+                        className="intel"
+                    />
+                ) : (
+                    <img src={languages.img} alt={languages.item} />
+                )}
+                <p className="mt-2">{languages.item}</p>
+            </div>
+        </li>
+    ));
     return (
         <>
             <Navbar />
@@ -52,10 +47,14 @@ const Home = () => {
                     <div className="row align-items-center">
                         <div className="col-12 col-lg-6 ">
                             <div className="first__section__header slideDown">
-                                Hi, my name is Frederick.
+                                Hi, my name is Frederick.{' '}
+                                <span className="header__extra">
+                                    (BSc. Computer Engineering)
+                                </span>
                             </div>
+
                             <div className="first__section__secondary mt-4 mb-3 slideLeft">
-                                I'm a fullstack web developer with Experience in
+                                I'm a fullstack web developer with experience in
                                 building web applications with
                                 React/Express/Spring
                             </div>
@@ -150,7 +149,7 @@ const Home = () => {
                             </div>
                             <div className="second__section__secondary mt-2">
                                 I can take your business a step further by
-                                getting your shop online. This, I will do by
+                                getting your shop online. I wiil do this by
                                 designing and building a fully-functional
                                 e-commerce shop with payment integrations, using{' '}
                                 <span className="focus__text">
@@ -229,150 +228,7 @@ const Home = () => {
 
                         <div className="col-12 col-xl-6">
                             <ul className="dev__icons">
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={JavaScript} alt="JS" />
-                                        <p className="mt-2">Java Script</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={Java} alt="Java" />
-                                        <p className="mt-2">Java</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={Html} alt="HTML" />
-                                        <p className="mt-2">HTML</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={Sass} alt="Sass" />
-                                        <p className="mt-2">CSS/SCSS</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={Bootstrap} alt="Boot" />
-                                        <p className="mt-2">Bootstrap</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={Chakra} alt="Chakra" />
-                                        <p className="mt-2">Chakra UI</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={ReactImage} alt="React" />
-                                        <p className="mt-2">ReactJS</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={Express} alt="Express" />
-                                        <p className="mt-2">
-                                            Node JS (Express JS)
-                                        </p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={Spring} alt="Spring" />
-                                        <p className="mt-2">Java Springboot</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={GraphQL} alt="GraphQL" />
-                                        <p className="mt-2">GraphQL</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={Nextjs} alt="Next JS" />
-                                        <p className="mt-2">Next JS</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={Flutter} alt="Flutter" />
-                                        <p className="mt-2">Flutter</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={PG} alt="PG" />
-                                        <p className="mt-2">PGSQL-database</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={MongoDB} alt="Mongo" />
-                                        <p className="mt-2">MongoDB</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={AWS} alt="AWS" />
-                                        <p className="mt-2">AWS</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={Digital} alt="Next JS" />
-                                        <p className="mt-2">Digital Ocean</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={Heroku} alt="Heroku" />
-                                        <p className="mt-2">Heroku</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={VS} alt="VS" />
-                                        <p className="mt-2">VS Code</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={Postman} alt="Postman" />
-                                        <p className="mt-2">Postman</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={Adobe} alt="Adobe" />
-                                        <p className="mt-2">Adobe XD</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img
-                                            src={Intel}
-                                            alt="Intel"
-                                            className="intel"
-                                        />
-                                        <p className="mt-2">IntelliJ</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={Webpack} alt="Webpack" />
-                                        <p className="mt-2">Webpack</p>
-                                    </div>
-                                </li>
-                                <li className="icons__inline me-3">
-                                    <div className="third__section__icons">
-                                        <img src={Wix} alt="Wix" />
-                                        <p className="mt-2">Wix</p>
-                                    </div>
-                                </li>
+                                {LanguagesFrameworks}
                             </ul>
                         </div>
                     </div>
