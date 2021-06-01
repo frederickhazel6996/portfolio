@@ -9,7 +9,9 @@ import {
     Adobe,
     Meister,
     Flutter,
-    Languages
+    Languages,
+    Projects,
+    Light
 } from '../../Utils/values';
 import { backToTop } from '../../Utils/methods';
 import './index.scss';
@@ -230,6 +232,476 @@ const Home = () => {
                             <ul className="dev__icons">
                                 {LanguagesFrameworks}
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="fourtheSection">
+                <div className="container fourth__section">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="fourth__section__header">
+                                Projects
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row mt-5">
+                        <div className="col-12  ">
+                            <div className="big__project cedi">
+                                <div className="row align-items-center justify-content-around">
+                                    <div className="col-12 col-lg-5">
+                                        <div className="name mb-2">
+                                            {Projects[0].name}{' '}
+                                            <span>
+                                                <img
+                                                    src={Projects[0].icon}
+                                                    alt="Icon"
+                                                    className="project__icon ms-2"
+                                                />
+                                            </span>
+                                        </div>
+                                        <div className="description mb-2">
+                                            {Projects[0].desc}
+                                        </div>
+                                        <div className="type mb-2">
+                                            {Projects[0].type}
+                                        </div>
+                                        <div className="stack mt-3">
+                                            <ul>
+                                                {Projects[0].tech.map(
+                                                    project => (
+                                                        <li>
+                                                            <span className="">
+                                                                <img
+                                                                    src={Light}
+                                                                    alt="Light"
+                                                                    className="icon__light"
+                                                                />
+                                                            </span>
+                                                            {project}
+                                                        </li>
+                                                    )
+                                                )}
+                                            </ul>
+                                        </div>
+                                        <div className="note">
+                                            {Projects[0].note}
+                                        </div>
+                                        <div className="link">
+                                            <a
+                                                href={Projects[0].url}
+                                                target="_blank"
+                                                rel="noreferrer">
+                                                {' '}
+                                                Visit {Projects[0].name}{' '}
+                                                <span className="link__icon">
+                                                    <i class="fas fa-external-link-alt ms-2"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-11 col-lg-5 large__screen">
+                                        <img
+                                            src={Projects[0].img}
+                                            alt={Projects[0].name}
+                                            className="project__main__image"
+                                        />
+                                    </div>
+                                    <div className="col-11 col-lg-5 small__screen">
+                                        <img
+                                            src={Projects[0].extraImg}
+                                            alt={Projects[0].name}
+                                            className="project__main__image2"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-lg-6 mt-5">
+                            <div className="small__project blaze">
+                                <div className="row align-items-center justify-content-around">
+                                    <div className="col-11">
+                                        <div className="name mb-2">
+                                            {Projects[1].name}{' '}
+                                            <span>
+                                                <img
+                                                    src={Projects[1].icon}
+                                                    alt="Icon"
+                                                    className="project__icon ms-2"
+                                                />
+                                            </span>
+                                        </div>
+                                        <div className="description mb-2">
+                                            {Projects[1].desc}
+                                        </div>
+                                        <div className="type mb-2">
+                                            {Projects[1].type}
+                                        </div>
+                                        <div className="stack mt-3">
+                                            <ul>
+                                                {Projects[1].tech.map(
+                                                    project => (
+                                                        <li>
+                                                            <span className="">
+                                                                <img
+                                                                    src={Light}
+                                                                    alt="Light"
+                                                                    className="icon__light"
+                                                                />
+                                                            </span>
+                                                            {project}
+                                                        </li>
+                                                    )
+                                                )}
+                                            </ul>
+                                        </div>
+
+                                        <div className="link my-3">
+                                            <a
+                                                href={Projects[1].url}
+                                                target="_blank"
+                                                rel="noreferrer">
+                                                {' '}
+                                                Visit {Projects[1].name}{' '}
+                                                <span className="link__icon">
+                                                    <i class="fas fa-external-link-alt ms-2"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div className="note mb-2">
+                                            {Projects[1].note}
+                                        </div>
+                                    </div>
+                                    <div className="col-11">
+                                        <img
+                                            src={Projects[1].img}
+                                            alt={Projects[1].name}
+                                            className="project__main__image"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-lg-6 mt-5">
+                            <div className="small__project hazegen">
+                                <div className="row align-items-center justify-content-around">
+                                    <div className="col-11">
+                                        <div className="name mb-2">
+                                            {Projects[6].name}{' '}
+                                            <span>
+                                                <img
+                                                    src={Projects[6].icon}
+                                                    alt="Icon"
+                                                    className="project__icon ms-2"
+                                                />
+                                            </span>
+                                        </div>
+                                        <div className="description mb-2">
+                                            {Projects[6].desc}
+                                        </div>
+                                        <div className="type mb-2">
+                                            {Projects[6].type}
+                                        </div>
+                                        <div className="stack mt-3">
+                                            <ul>
+                                                {Projects[6].tech.map(
+                                                    project => (
+                                                        <li>
+                                                            <span className="">
+                                                                <img
+                                                                    src={Light}
+                                                                    alt="Light"
+                                                                    className="icon__light"
+                                                                />
+                                                            </span>
+                                                            {project}
+                                                        </li>
+                                                    )
+                                                )}
+                                            </ul>
+                                        </div>
+
+                                        <div className="link my-3">
+                                            <a
+                                                href={Projects[6].url}
+                                                target="_blank"
+                                                rel="noreferrer">
+                                                {' '}
+                                                Visit {Projects[6].name}{' '}
+                                                <span className="link__icon">
+                                                    <i class="fas fa-external-link-alt ms-2"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div className="note mb-2">
+                                            {Projects[6].note}
+                                        </div>
+                                    </div>
+                                    <div className="col-11">
+                                        <img
+                                            src={Projects[6].img}
+                                            alt={Projects[6].name}
+                                            className="project__main__image"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 mt-5">
+                            <div className="big__project medic">
+                                <div className="row align-items-center justify-content-around">
+                                    <div className="col-11 col-lg-5">
+                                        <div className="name mb-2">
+                                            {Projects[2].name}{' '}
+                                            <span>
+                                                <img
+                                                    src={Projects[2].icon}
+                                                    alt="Icon"
+                                                    className="project__icon ms-2"
+                                                />
+                                            </span>
+                                        </div>
+                                        <div className="description mb-2">
+                                            {Projects[2].desc}
+                                        </div>
+                                        <div className="type mb-2">
+                                            {Projects[2].type}
+                                        </div>
+                                        <div className="stack mt-3">
+                                            <ul>
+                                                {Projects[2].tech.map(
+                                                    project => (
+                                                        <li>
+                                                            <span className="">
+                                                                <img
+                                                                    src={Light}
+                                                                    alt="Light"
+                                                                    className="icon__light"
+                                                                />
+                                                            </span>
+                                                            {project}
+                                                        </li>
+                                                    )
+                                                )}
+                                            </ul>
+                                        </div>
+                                        <div className="note my-2">
+                                            {Projects[2].note}
+                                        </div>
+                                        <div className="link">
+                                            <a
+                                                href={Projects[2].url}
+                                                target="_blank"
+                                                rel="noreferrer">
+                                                {' '}
+                                                Visit {Projects[2].name}{' '}
+                                                <span className="link__icon">
+                                                    <i class="fas fa-external-link-alt ms-2"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-11 col-lg-5">
+                                        <img
+                                            src={Projects[2].img}
+                                            alt={Projects[2].name}
+                                            className="project__main__image"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-lg-6 col-xl-4 mt-5">
+                            <div className="tiny__project shop">
+                                <div className="row align-items-center justify-content-around">
+                                    <div className="col-11">
+                                        <div className="name mb-2">
+                                            {Projects[5].name}{' '}
+                                            <span>
+                                                <img
+                                                    src={Projects[5].icon}
+                                                    alt="Icon"
+                                                    className="project__icon ms-2"
+                                                />
+                                            </span>
+                                        </div>
+                                        <div className="description mb-2">
+                                            {Projects[5].desc}
+                                        </div>
+                                        <div className="type mb-2">
+                                            {Projects[5].type}
+                                        </div>
+                                        <div className="stack mt-3">
+                                            <ul>
+                                                {Projects[5].tech.map(
+                                                    project => (
+                                                        <li>
+                                                            <span className="">
+                                                                <img
+                                                                    src={Light}
+                                                                    alt="Light"
+                                                                    className="icon__light"
+                                                                />
+                                                            </span>
+                                                            {project}
+                                                        </li>
+                                                    )
+                                                )}
+                                            </ul>
+                                        </div>
+                                        <div className="note my-2">
+                                            {Projects[5].note}
+                                        </div>
+                                        <div className="link">
+                                            <a
+                                                href={Projects[5].url}
+                                                target="_blank"
+                                                rel="noreferrer">
+                                                {' '}
+                                                Visit {Projects[5].name}{' '}
+                                                <span className="link__icon">
+                                                    <i class="fas fa-external-link-alt ms-2"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-11 mt-3">
+                                        <img
+                                            src={Projects[5].img}
+                                            alt={Projects[5].name}
+                                            className="project__main__image"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-lg-6 col-xl-4 mt-5">
+                            <div className="tiny__project spawn">
+                                <div className="row align-items-center justify-content-around">
+                                    <div className="col-11">
+                                        <div className="name mb-2">
+                                            {Projects[9].name}{' '}
+                                            <span>
+                                                <img
+                                                    src={Projects[9].icon}
+                                                    alt="Icon"
+                                                    className="project__icon ms-2"
+                                                />
+                                            </span>
+                                        </div>
+                                        <div className="description mb-2">
+                                            {Projects[9].desc}
+                                        </div>
+                                        <div className="type mb-2">
+                                            {Projects[9].type}
+                                        </div>
+                                        <div className="stack mt-3">
+                                            <ul>
+                                                {Projects[9].tech.map(
+                                                    project => (
+                                                        <li>
+                                                            <span className="">
+                                                                <img
+                                                                    src={Light}
+                                                                    alt="Light"
+                                                                    className="icon__light"
+                                                                />
+                                                            </span>
+                                                            {project}
+                                                        </li>
+                                                    )
+                                                )}
+                                            </ul>
+                                        </div>
+                                        <div className="note my-2">
+                                            {Projects[9].note}
+                                        </div>
+                                        <div className="link">
+                                            <a
+                                                href={Projects[9].url}
+                                                target="_blank"
+                                                rel="noreferrer">
+                                                {' '}
+                                                Visit {Projects[9].name}{' '}
+                                                <span className="link__icon">
+                                                    <i class="fas fa-external-link-alt ms-2"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-11 mt-3">
+                                        <img
+                                            src={Projects[9].img}
+                                            alt={Projects[9].name}
+                                            className="project__main__image"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-lg-6 col-xl-4 mt-5">
+                            <div className="tiny__project tofie">
+                                <div className="row align-items-center justify-content-around">
+                                    <div className="col-11">
+                                        <div className="name mb-2">
+                                            {Projects[3].name}{' '}
+                                            <span>
+                                                <img
+                                                    src={Projects[3].icon}
+                                                    alt="Icon"
+                                                    className="project__icon ms-2"
+                                                />
+                                            </span>
+                                        </div>
+                                        <div className="description mb-2">
+                                            {Projects[3].desc}
+                                        </div>
+                                        <div className="type mb-2">
+                                            {Projects[3].type}
+                                        </div>
+                                        <div className="stack mt-3">
+                                            <ul>
+                                                {Projects[3].tech.map(
+                                                    project => (
+                                                        <li>
+                                                            <span className="   ">
+                                                                <img
+                                                                    src={Light}
+                                                                    alt="Light"
+                                                                    className="icon__light"
+                                                                />
+                                                            </span>
+                                                            {project}
+                                                        </li>
+                                                    )
+                                                )}
+                                            </ul>
+                                        </div>
+                                        <div className="note my-2">
+                                            {Projects[3].note}
+                                        </div>
+                                        <div className="link">
+                                            <a
+                                                href={Projects[3].url}
+                                                target="_blank"
+                                                rel="noreferrer">
+                                                {' '}
+                                                Visit {Projects[3].name}{' '}
+                                                <span className="link__icon">
+                                                    <i class="fas fa-external-link-alt ms-2"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-11 mt-3">
+                                        <img
+                                            src={Projects[3].img}
+                                            alt={Projects[3].name}
+                                            className="project__main__image"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

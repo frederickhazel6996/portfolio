@@ -166,3 +166,256 @@
 .focus__text {
     color: $primary-color;
 }
+
+.fourth__section {
+    margin-top: 150px;
+    .fourth__section__header {
+        font-size: 27px;
+        font-weight: 550;
+        @include media-breakpoint-down(xl) {
+            text-align: center;
+        }
+    }
+
+    .big__project {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        .small__screen {
+            display: none;
+        }
+
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+            padding-bottom: 50px;
+
+            .small__screen {
+                display: block;
+            }
+            .large__screen {
+                display: none;
+            }
+        }
+        .note {
+            font-size: 12px;
+            font-weight: 500;
+            color: $primary-color;
+        }
+        .project__main__image {
+            -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.14);
+            box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.14);
+            height: 500px;
+            width: 350px;
+            @include media-breakpoint-down(lg) {
+                margin-top: 1rem;
+            }
+        }
+        .project__main__image2 {
+            -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.14);
+            box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.14);
+            height: 300px;
+            width: 500px;
+            @include media-breakpoint-down(lg) {
+                margin-top: 1rem;
+            }
+            @include media-breakpoint-down(md) {
+                margin-top: 1rem;
+                height: 200px;
+                width: 280px;
+            }
+            @media screen and (max-width: 330px) {
+                margin-top: 1rem;
+                height: 150px;
+                width: 220px;
+            }
+        }
+        .name {
+            font-size: 25px;
+            font-weight: 500;
+        }
+        .type {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .project__icon {
+            height: 30px;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        .icon__light {
+            height: 20px !important;
+            width: 20px;
+        }
+        ul {
+            list-style: none;
+        }
+    }
+    .small__project {
+        // height: 800px;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        @include media-breakpoint-down(xl) {
+            padding-bottom: 50px;
+        }
+        text-align: center;
+
+        .project__main__image {
+            -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.14);
+            box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.14);
+            height: 300px;
+            width: 500px;
+            @include media-breakpoint-down(xxl) {
+                // margin-top: 1rem;
+                height: 250px;
+                width: 400px;
+            }
+            @include media-breakpoint-down(xl) {
+                margin-top: 1rem;
+                height: 250px;
+                width: 400px;
+            }
+            @include media-breakpoint-down(md) {
+                margin-top: 1rem;
+                height: 200px;
+                width: 300px;
+            }
+            @media screen and (max-width: 330px) {
+                margin-top: 1rem;
+                height: 150px;
+                width: 220px;
+            }
+        }
+        .name {
+            font-size: 25px;
+            font-weight: 500;
+        }
+        .type {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .project__icon {
+            height: 30px;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        .icon__light {
+            height: 20px !important;
+            width: 20px;
+        }
+        ul {
+            list-style: none;
+            @include media-breakpoint-down(md) {
+                text-align: start !important;
+            }
+        }
+
+        li {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .note {
+            font-size: 12px;
+            font-weight: 500;
+            color: $primary-color;
+        }
+    }
+    .tiny__project {
+        // height: 800px;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        text-align: center;
+
+        .project__main__image {
+            -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.14);
+            box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.14);
+            height: 190px;
+            width: 280px;
+
+            @include media-breakpoint-down(xxl) {
+                height: 190px;
+                width: 300px;
+            }
+            @media screen and (max-width: 330px) {
+                margin-top: 1rem;
+                height: 150px;
+                width: 220px;
+            }
+        }
+        .name {
+            font-size: 25px;
+            font-weight: 500;
+        }
+        .type {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .project__icon {
+            height: 30px;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        .icon__light {
+            height: 20px !important;
+            width: 20px;
+        }
+        ul {
+            list-style: none;
+        }
+
+        .note {
+            font-size: 12px;
+            font-weight: 500;
+            color: $primary-color;
+        }
+    }
+    .tiny__project.shop {
+        background-color: #fbf8ef;
+    }
+    .tiny__project.spawn {
+        background-color: #fff8f8;
+    }
+    .tiny__project.tofie {
+        background-color: #fff7f1;
+    }
+    .big__project.cedi {
+        background-color: #fff7f1;
+    }
+    .small__project.hazegen {
+        background-color: #f8fff8;
+    }
+    .small__project.blaze {
+        background-color: #fff8f8;
+    }
+    .big__project.medic {
+        background-color: #fbf8ff;
+        .project__main__image {
+            height: 280px !important;
+            width: 390px !important;
+
+            @include media-breakpoint-down(xxl) {
+                // margin-top: 1rem;
+                height: 250px !important;
+                width: 400px !important;
+            }
+            @include media-breakpoint-down(md) {
+                margin-top: 1rem;
+                height: 200px !important;
+                width: 280px !important;
+            }
+            @media screen and (max-width: 330px) {
+                margin-top: 1rem;
+                height: 150px !important;
+                width: 220px !important;
+            }
+        }
+    }
+}
