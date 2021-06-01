@@ -17,6 +17,7 @@ export const JavaScript =
 export const Sass = require('../Assets/Images/node-sass.svg').default;
 export const Swagger = require('../Assets/Images/swagger_logo.svg').default;
 export const Light = require('../Assets/Images/lightning.png').default;
+export const Contact = require('../Assets/Images/contact5.svg').default;
 export const PG = require('../Assets/Images/postgresql.svg').default;
 export const Spring = require('../Assets/Images/spring-3.svg').default;
 export const Html = require('../Assets/Images/html5-2.svg').default;
@@ -28,6 +29,7 @@ export const Adobe = require('../Assets/Images/adobe-xd-1.svg').default;
 export const Postman = require('../Assets/Images/getpostman-icon.svg').default;
 export const Intel = require('../Assets/Images/intellijidea.svg').default;
 export const Meister = require('../Assets/Images/meister.png').default;
+export const Meister2 = require('../Assets/Images/meister2.png').default;
 export const Wix = require('../Assets/Images/wix.svg').default;
 export const Webpack = require('../Assets/Images/webpack.svg').default;
 export const Flutter = require('../Assets/Images/flutter-logo.svg').default;
@@ -146,7 +148,7 @@ export const Projects = [
         name: 'ShopDiya',
         type: 'FullStack Project with CMS',
         tech: ['Wix CMS', 'PayStack'],
-        desc: 'This is an E commerce site i designed and built with Wix',
+        desc: 'This is an E commerce site I designed and built with Wix',
         note: '',
         img: WixWeb,
         url: 'https://www.shopdiyaorganics.com/',
@@ -155,8 +157,8 @@ export const Projects = [
     {
         name: 'HazeGen',
         type: 'Frontend Web project',
-        tech: ['React JS', 'Bootstrap CSS'],
-        desc: 'I recreated a website I saw online and added my own touch',
+        tech: ['React JS', 'Bootstrap CSS', 'Animate CSS'],
+        desc: 'This is a website i created for an imaginary business (HazeGen) using react',
         note: 'Purely Frontend. Login And Sign up buttons do not work',
         img: Hazegen,
         url: 'https://hazegen.hazelprojects.xyz/',
@@ -186,7 +188,7 @@ export const Projects = [
         name: 'Spawn Password',
         type: 'Javascript Library',
         tech: ['Vanilla JS'],
-        desc: 'Spawn Password is a Javascript library that produces strings that can be used as passwords or identifiers',
+        desc: 'Spawn Password is a Javascript library that produces strings that can be used as passwords or IDs',
         note: '',
         img: Spawn,
         url: 'https://www.npmjs.com/package/spawn-password',

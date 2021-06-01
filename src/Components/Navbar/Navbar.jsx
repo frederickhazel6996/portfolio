@@ -8,7 +8,7 @@ const Navbar = () => {
     }, []);
     return (
         <>
-            <div className="">
+            <div className="fixed-top">
                 <header className="nav__header">
                     <div className="container ">
                         <nav className="navbar  navbar-expand-lg ">
@@ -34,7 +34,7 @@ const Navbar = () => {
                                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
                                         <li className="nav-item">
                                             <a
-                                                className="nav-link"
+                                                className="nav-link about__link"
                                                 href="#firstSection">
                                                 About
                                             </a>
@@ -42,14 +42,14 @@ const Navbar = () => {
 
                                         <li className="nav-item">
                                             <a
-                                                className="nav-link"
+                                                className="nav-link work__link"
                                                 href="#fourthSection">
                                                 My Work
                                             </a>
                                         </li>
-                                        <li className="nav-item">
+                                        <li className="nav-item ">
                                             <a
-                                                className="nav-link"
+                                                className="nav-link contact__link"
                                                 href="#fifthSection">
                                                 Contact
                                             </a>
@@ -61,7 +61,7 @@ const Navbar = () => {
                     </div>
                 </header>
             </div>
-            {/* <div className="nav__spacer"></div> */}
+            <div className="nav__spacer"></div>
         </>
     );
 };

@@ -11,17 +11,41 @@ import {
     Flutter,
     Languages,
     Projects,
-    Light
+    Light,
+    Contact,
+    Meister2
 } from '../../Utils/values';
+import $ from 'jquery';
 import { backToTop } from '../../Utils/methods';
 import './index.scss';
 import './animate.scss';
-// import useInView from 'react-cool-inview';
+import useInView from 'react-cool-inview';
 
 const Home = () => {
     useEffect(() => {
         backToTop();
     }, []);
+    const { observe: observe1 } = useInView({
+        onEnter: ({ scrollDirection, entry, observe, unobserve }) => {
+            $('.work__link').addClass('active');
+            $('.contact__link').removeClass('active');
+            $('.about__link').removeClass('active');
+        }
+    });
+    const { observe: observe2 } = useInView({
+        onEnter: ({ scrollDirection, entry, observe, unobserve }) => {
+            $('.work__link').removeClass('active');
+            $('.contact__link').addClass('active');
+            $('.about__link').removeClass('active');
+        }
+    });
+    const { observe } = useInView({
+        onEnter: ({ scrollDirection, entry, observe, unobserve }) => {
+            $('.work__link').removeClass('active');
+            $('.contact__link').removeClass('active');
+            $('.about__link').addClass('active');
+        }
+    });
 
     const LanguagesFrameworks = Languages.map((languages, index) => (
         <li className="icons__inline me-3" key={index}>
@@ -44,22 +68,21 @@ const Home = () => {
             <Navbar />
             <br />
 
-            <section id="firstSection">
+            <section id="firstSection" ref={observe}>
                 <div className="container first__section">
-                    <div className="row align-items-center">
-                        <div className="col-12 col-lg-6 ">
+                    <div className="row align-items-center justify-content-between">
+                        <div className="col-12 col-lg-5 ">
                             <div className="first__section__header slideDown">
                                 Hi, my name is Frederick.{' '}
-                                <span className="header__extra">
-                                    (BSc. Computer Engineering)
-                                </span>
                             </div>
-
                             <div className="first__section__secondary mt-4 mb-3 slideLeft">
                                 I'm a fullstack web developer with experience in
                                 building web applications with
                                 React/Express/Spring
                             </div>
+                            <div className="header__extra mb-3">
+                                (BSc Computer Engineering)
+                            </div>{' '}
                             <div className="first__section__buttons slideUp">
                                 <a
                                     className="btn btn-lg btn-outline-primary me-3 my__cv"
@@ -74,7 +97,7 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className="col-12 col-lg-6 header__image fadeIn">
+                        <div className="col-12 col-lg-5 header__image fadeIn">
                             <img
                                 src={Meister}
                                 alt="Header"
@@ -236,7 +259,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section id="fourtheSection">
+            <section id="fourthSection" ref={observe1}>
                 <div className="container fourth__section">
                     <div className="row">
                         <div className="col-12">
@@ -693,7 +716,7 @@ const Home = () => {
                                             </a>
                                         </div>
                                     </div>
-                                    <div className="col-11 mt-3">
+                                    <div className="col-11 mt-3 contact__svg">
                                         <img
                                             src={Projects[3].img}
                                             alt={Projects[3].name}
@@ -706,7 +729,69 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <section id="sixthSection" ref={observe2}>
+                <div className="container sixth__section">
+                    <div className="row justify-content-between">
+                        <div className="col-12 col-lg-5">
+                            <div className="sixth__section__header">
+                                Just Say Hello
+                            </div>
+                            <div className="sixth__section__secondary">
+                                I am always open to discussing new projects or
+                                help with improving already existing ones.
+                            </div>
+                            <div className="sixth__section__header__extra mt-5">
+                                Email me at
+                            </div>
+                            <div className="email">
+                                <a href="mailto:  frederick_hazel@hotmail.com">
+                                    frederick_hazel@hotmail.com{' '}
+                                    <i class="fas fa-external-link-alt ms-2"></i>
+                                </a>
+                            </div>
+                            <div className="sixth__section__header__extra mt-5">
+                                Follow me
+                            </div>
+                            <div className="col-12 mt-2 follow__icons">
+                                <a
+                                    class="btn btn-outline-primary extra me-2"
+                                    href="https://github.com/frederickhazel6996?tab=repositories">
+                                    <i class="fab fa-fw fa-github"></i>
+                                </a>
+                                <a
+                                    class="btn btn-outline-primary extra me-1 px-3"
+                                    href="https://www.linkedin.com/in/frederick-sagoe-753856182/">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a
+                                    class="btn btn-outline-primary extra me-2"
+                                    href="https://twitter.com/meister_kwame">
+                                    <i class="fab fa-fw fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="col-12 col-lg-5 ">
+                            <div className="contact__image ">
+                                <img
+                                    src={Meister2}
+                                    alt="Meister"
+                                    className="sixth__section__image"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <br />
+            <footer>
+                <div className="container footer__section">
+                    {' '}
+                    <div id="date" className="my-2">
+                        {' '}
+                        &copy; 2021 Frederick Hazel{' '}
+                    </div>
+                </div>
+            </footer>
 
             <a
                 id="back-to-top"

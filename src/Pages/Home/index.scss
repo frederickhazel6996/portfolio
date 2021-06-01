@@ -2,7 +2,7 @@
 
 .first__section {
     color: $primary-color-dark;
-    margin-top: 50px;
+    margin-top: 100px;
     // min-height: 100px;
     /*  background-color: red; */
     .first__section__image {
@@ -76,6 +76,9 @@
 
     .header__extra {
         font-size: 12px;
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+        }
     }
 }
 
@@ -247,9 +250,11 @@
         .icon__light {
             height: 20px !important;
             width: 20px;
+            margin-right: 5px;
         }
         ul {
             list-style: none;
+            padding: 0;
         }
     }
     .small__project {
@@ -265,7 +270,7 @@
         .project__main__image {
             -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.14);
             box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.14);
-            height: 300px;
+            height: 280px;
             width: 500px;
             @include media-breakpoint-down(xxl) {
                 // margin-top: 1rem;
@@ -306,17 +311,15 @@
         .icon__light {
             height: 20px !important;
             width: 20px;
+            margin-right: 5px;
         }
         ul {
             list-style: none;
-            @include media-breakpoint-down(md) {
-                text-align: start !important;
-            }
+            padding: 0;
         }
 
         li {
-            display: inline-block;
-            margin-left: 10px;
+            margin-left: 0px;
         }
 
         .note {
@@ -335,7 +338,7 @@
         .project__main__image {
             -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.14);
             box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.14);
-            height: 190px;
+            height: 180px;
             width: 280px;
 
             @include media-breakpoint-down(xxl) {
@@ -366,9 +369,11 @@
         .icon__light {
             height: 20px !important;
             width: 20px;
+            margin-right: 5px;
         }
         ul {
             list-style: none;
+            padding: 0;
         }
 
         .note {
@@ -398,8 +403,8 @@
     .big__project.medic {
         background-color: #fbf8ff;
         .project__main__image {
-            height: 280px !important;
-            width: 390px !important;
+            height: 250px !important;
+            width: 380px !important;
 
             @include media-breakpoint-down(xxl) {
                 // margin-top: 1rem;
@@ -418,4 +423,108 @@
             }
         }
     }
+}
+
+.sixth__section {
+    margin-top: 150px;
+
+    .sixth__section__header {
+        font-size: 27px;
+        font-weight: 550;
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+        }
+    }
+
+    .sixth__section__secondary {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 60px;
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+        }
+    }
+    .sixth__section__header__extra {
+        font-size: 12px;
+        font-weight: 400;
+        color: $accent-color-extra;
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+        }
+    }
+
+    .email {
+        font-weight: 500;
+        color: $primary-color;
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+        }
+    }
+    a {
+        text-decoration: none;
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+        }
+    }
+    i {
+        font-size: 15px;
+    }
+    .follow__icons {
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+        }
+    }
+    .extra {
+        &:hover {
+            color: white;
+        }
+    }
+    .contact__image {
+        height: 500px;
+        width: 500px;
+    }
+    .sixth__section__image {
+        height: 280px;
+        width: 270px;
+        // float: left;
+        background: hsla(28, 100%, 65%, 1);
+
+        background: linear-gradient(
+            180deg,
+            hsla(28, 100%, 65%, 1) 0%,
+            hsla(28, 100%, 87%, 1) 100%
+        );
+
+        background: -moz-linear-gradient(
+            180deg,
+            hsla(28, 100%, 65%, 1) 0%,
+            hsla(28, 100%, 87%, 1) 100%
+        );
+
+        background: -webkit-linear-gradient(
+            180deg,
+            hsla(28, 100%, 65%, 1) 0%,
+            hsla(28, 100%, 87%, 1) 100%
+        );
+
+        border-radius: 25px;
+    }
+    .contact__image {
+        width: 100%;
+
+        text-align: center;
+        @include media-breakpoint-down(lg) {
+            margin-top: 80px;
+        }
+    }
+}
+
+.footer__section {
+    border-top: 1px solid $accent-color;
+    text-align: center;
+    color: $accent-color-extra;
+}
+
+.active {
+    color: $primary-color;
 }
