@@ -134,6 +134,11 @@
         text-align: center;
         img {
             height: 36px;
+
+            &:hover {
+                animation: headShake;
+                animation-duration: 1s;
+            }
         }
         i {
             font-size: 50px;

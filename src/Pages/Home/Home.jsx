@@ -37,6 +37,7 @@ const Home = () => {
             $('.work__link').removeClass('active');
             $('.contact__link').addClass('active');
             $('.about__link').removeClass('active');
+            $('.sixth__section').addClass('fadeIn');
         }
     });
     const { observe } = useInView({
