@@ -6,6 +6,7 @@ export const WixImage = require('../Assets/Images/shopping.svg').default;
 export const GraphQL = require('../Assets/Images/graphql.svg').default;
 export const Azure = require('../Assets/Images/azure.svg').default;
 export const MongoDB = require('../Assets/Images/mongodb.svg').default;
+export const Jest = require('../Assets/Images/jest.png').default;
 export const Nextjs = require('../Assets/Images/nextjs.svg').default;
 export const Heroku = require('../Assets/Images/heroku.svg').default;
 export const Digital = require('../Assets/Images/digitalocean-2.svg').default;
@@ -76,6 +77,7 @@ export const Languages = [
     { item: 'Java Springboot', img: Spring },
     { item: 'GraphQL', img: GraphQL },
     { item: 'Next JS', img: Nextjs },
+    { item: 'Jest', img: Jest },
     { item: 'Flutter', img: Flutter },
     { item: 'PGSQL', img: PG },
     { item: 'MongoDB', img: MongoDB },
