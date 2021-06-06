@@ -50,7 +50,7 @@ const Navbar = () => {
                                         <li className="nav-item ">
                                             <a
                                                 className="nav-link contact__link"
-                                                href="#fifthSection">
+                                                href="#sixthSection">
                                                 Contact
                                             </a>
                                         </li>

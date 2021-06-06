@@ -92,9 +92,12 @@ const Home = () => {
                                     rel="noreferrer">
                                     My CV
                                 </a>
-                                <div className="btn btn-lg btn-primary me-3 work__button">
+
+                                <a
+                                    href="#fourthSection"
+                                    className="btn btn-lg btn-primary me-3 work__button">
                                     My Work
-                                </div>
+                                </a>
                             </div>
                         </div>
 
@@ -175,7 +178,7 @@ const Home = () => {
                             </div>
                             <div className="second__section__secondary mt-2">
                                 I can take your business a step further by
-                                getting your shop online. I wiil do this by
+                                getting your shop online. I will do this by
                                 designing and building a fully-functional
                                 e-commerce shop with payment integrations, using{' '}
                                 <span className="focus__text">
@@ -756,17 +759,23 @@ const Home = () => {
                             <div className="col-12 mt-2 follow__icons">
                                 <a
                                     class="btn btn-outline-primary extra me-2"
-                                    href="https://github.com/frederickhazel6996?tab=repositories">
+                                    href="https://github.com/frederickhazel6996?tab=repositories"
+                                    target="_blank"
+                                    rel="noreferrer">
                                     <i class="fab fa-fw fa-github"></i>
                                 </a>
                                 <a
                                     class="btn btn-outline-primary extra me-1 px-3"
-                                    href="https://www.linkedin.com/in/frederick-sagoe-753856182/">
+                                    href="https://www.linkedin.com/in/frederick-sagoe-753856182/"
+                                    target="_blank"
+                                    rel="noreferrer">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
                                 <a
                                     class="btn btn-outline-primary extra me-2"
-                                    href="https://twitter.com/meister_kwame">
+                                    href="https://twitter.com/meister_kwame"
+                                    target="_blank"
+                                    rel="noreferrer">
                                     <i class="fab fa-fw fa-twitter"></i>
                                 </a>
                             </div>
