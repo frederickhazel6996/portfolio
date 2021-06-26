@@ -13,8 +13,7 @@ export const Digital = require('../Assets/Images/digitalocean-2.svg').default;
 export const ReactImage = require('../Assets/Images/react-2.svg').default;
 export const Bootstrap = require('../Assets/Images/bootstrap-4.svg').default;
 export const Java = require('../Assets/Images/java-4.svg').default;
-export const JavaScript =
-    require('../Assets/Images/logo-javascript.svg').default;
+export const JavaScript = require('../Assets/Images/typescript.svg').default;
 export const Sass = require('../Assets/Images/node-sass.svg').default;
 export const Swagger = require('../Assets/Images/swagger_logo.svg').default;
 export const Light = require('../Assets/Images/lightning.png').default;
@@ -27,6 +26,8 @@ export const Chakra = require('../Assets/Images/chakra.svg').default;
 export const AWS = require('../Assets/Images/aws-2.svg').default;
 export const VS = require('../Assets/Images/visual-studio-code-1.svg').default;
 export const Adobe = require('../Assets/Images/adobe-xd-1.svg').default;
+export const Figma = require('../Assets/Images/figma-1.svg').default;
+export const Excel = require('../Assets/Images/excel-4.svg').default;
 export const Postman = require('../Assets/Images/getpostman-icon.svg').default;
 export const Intel = require('../Assets/Images/intellijidea.svg').default;
 export const Meister = require('../Assets/Images/meister.png').default;
@@ -65,7 +66,7 @@ export const RocketIcon = require('../Assets/Images/icons/rocket.png').default;
 export const ShopIcon = require('../Assets/Images/icons/shop.png').default;
 
 export const Languages = [
-    { item: 'JavaScript', img: JavaScript },
+    { item: 'TypeScript', img: JavaScript },
     { item: 'Java', img: Java },
     { item: 'HTML5', img: Html },
     { item: 'CSS/SCSS', img: Sass },
@@ -87,7 +88,7 @@ export const Languages = [
     { item: 'Heroku', img: Heroku },
     { item: 'VS Code', img: VS },
     { item: 'Postman', img: Postman },
-    { item: 'Adobe XD', img: Adobe },
+    { item: 'Figma', img: Figma },
     { item: 'IntelliJ', img: Intel, type: 'extra' },
     { item: 'WebPack', img: Webpack },
     { item: 'Swagger', img: Swagger },

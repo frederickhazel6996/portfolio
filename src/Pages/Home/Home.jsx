@@ -7,12 +7,14 @@ import {
     WixImage,
     Server1Image,
     Adobe,
+    Figma,
     Meister,
     Flutter,
     Languages,
     Projects,
     Light,
     Contact,
+    Excel,
     Meister2
 } from '../../Utils/values';
 import $ from 'jquery';
@@ -202,7 +204,7 @@ const Home = () => {
                         <div className="col-12 col-lg-4 mb-2 fadeIn">
                             <div className="second__section__images__container">
                                 <img
-                                    src={Adobe}
+                                    src={Figma}
                                     alt="server"
                                     className="second__section__images"
                                 />
@@ -214,7 +216,7 @@ const Home = () => {
                                 I design and create web and mobile user
                                 interfaces that ensure that the user has a
                                 thrilling experience using{' '}
-                                <span className="focus__text">Adobe XD.</span>
+                                <span className="focus__text">Figma.</span>
                             </div>
                         </div>
                         <div className="col-12 col-lg-4 mb-2 fadeIn">
@@ -232,6 +234,22 @@ const Home = () => {
                                 I design and build cross-platform mobile
                                 applications using{' '}
                                 <span className="focus__text">Flutter.</span>
+                            </div>
+                        </div>
+                        <div className="col-12 col-lg-4 mb-2 fadeIn">
+                            <div className="second__section__images__container">
+                                <img
+                                    src={Excel}
+                                    alt="server"
+                                    className="second__section__images"
+                                />
+                            </div>
+                            <div className="second__section__secondary__header mt-2">
+                                Microsoft Excel
+                            </div>
+                            <div className="second__section__secondary mt-2">
+                                I can work with excel
+                                <span className="focus__text"> Excel.</span>
                             </div>
                         </div>
                     </div>
@@ -773,7 +791,7 @@ const Home = () => {
                                 </a>
                                 <a
                                     class="btn btn-outline-primary extra me-2"
-                                    href="https://twitter.com/meister_kwame"
+                                    href="https://twitter.com/HazexSolutions"
                                     target="_blank"
                                     rel="noreferrer">
                                     <i class="fab fa-fw fa-twitter"></i>
