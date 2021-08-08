@@ -13,8 +13,6 @@ import {
     Languages,
     Projects,
     Light,
-    Contact,
-    Excel,
     Meister2
 } from '../../Utils/values';
 import $ from 'jquery';
@@ -89,7 +87,7 @@ const Home = () => {
                             <div className="first__section__buttons slideUp">
                                 <a
                                     className="btn btn-lg btn-outline-primary me-3 my__cv"
-                                    href="https://www.dropbox.com/s/2q718ixsvlvjcf0/Frederick_Hazel_Sagoe_CV.pdf?dl=0"
+                                    href="https://drive.google.com/file/d/1s1QHPUJjNwDJ--LK3gcUlKUoXFwS2wrS/view?usp=sharing"
                                     target="_blank"
                                     rel="noreferrer">
                                     My CV
@@ -204,7 +202,7 @@ const Home = () => {
                         <div className="col-12 col-lg-4 mb-2 fadeIn">
                             <div className="second__section__images__container">
                                 <img
-                                    src={Figma}
+                                    src={Adobe}
                                     alt="server"
                                     className="second__section__images"
                                 />
@@ -216,7 +214,7 @@ const Home = () => {
                                 I design and create web and mobile user
                                 interfaces that ensure that the user has a
                                 thrilling experience using{' '}
-                                <span className="focus__text">Figma.</span>
+                                <span className="focus__text">Adobe XD.</span>
                             </div>
                         </div>
                         <div className="col-12 col-lg-4 mb-2 fadeIn">
@@ -234,22 +232,6 @@ const Home = () => {
                                 I design and build cross-platform mobile
                                 applications using{' '}
                                 <span className="focus__text">Flutter.</span>
-                            </div>
-                        </div>
-                        <div className="col-12 col-lg-4 mb-2 fadeIn">
-                            <div className="second__section__images__container">
-                                <img
-                                    src={Excel}
-                                    alt="server"
-                                    className="second__section__images"
-                                />
-                            </div>
-                            <div className="second__section__secondary__header mt-2">
-                                Microsoft Excel
-                            </div>
-                            <div className="second__section__secondary mt-2">
-                                I can work with excel
-                                <span className="focus__text"> Excel.</span>
                             </div>
                         </div>
                     </div>

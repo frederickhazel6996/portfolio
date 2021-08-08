@@ -6,6 +6,7 @@ export const WixImage = require('../Assets/Images/shopping.svg').default;
 export const GraphQL = require('../Assets/Images/graphql.svg').default;
 export const Azure = require('../Assets/Images/azure.svg').default;
 export const MongoDB = require('../Assets/Images/mongodb.svg').default;
+export const Strapi = require('../Assets/Images/strapi.svg').default;
 export const Jest = require('../Assets/Images/jest.png').default;
 export const Nextjs = require('../Assets/Images/nextjs.svg').default;
 export const Heroku = require('../Assets/Images/heroku.svg').default;
@@ -75,6 +76,7 @@ export const Languages = [
     { item: 'Materialize Css', img: Material },
     { item: 'ReactJS', img: ReactImage },
     { item: 'Node Js(Express JS)', img: Express },
+    { item: 'Strapi JS', img: Strapi },
     { item: 'Java Springboot', img: Spring },
     { item: 'GraphQL', img: GraphQL },
     { item: 'Next JS', img: Nextjs },
@@ -88,7 +90,7 @@ export const Languages = [
     { item: 'Heroku', img: Heroku },
     { item: 'VS Code', img: VS },
     { item: 'Postman', img: Postman },
-    { item: 'Figma', img: Figma },
+    { item: 'Adobe XD', img: Adobe },
     { item: 'IntelliJ', img: Intel, type: 'extra' },
     { item: 'WebPack', img: Webpack },
     { item: 'Swagger', img: Swagger },
