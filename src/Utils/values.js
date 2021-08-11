@@ -7,7 +7,7 @@ export const GraphQL = require('../Assets/Images/graphql.svg').default;
 export const Azure = require('../Assets/Images/azure.svg').default;
 export const MongoDB = require('../Assets/Images/mongodb.svg').default;
 export const Strapi = require('../Assets/Images/strapi.svg').default;
-export const Jest = require('../Assets/Images/jest.png').default;
+export const ReactTest = require('../Assets/Images/octopus.png').default;
 export const Nextjs = require('../Assets/Images/nextjs.svg').default;
 export const Heroku = require('../Assets/Images/heroku.svg').default;
 export const Digital = require('../Assets/Images/digitalocean-2.svg').default;
@@ -57,8 +57,7 @@ export const CediIcon = require('../Assets/Images/icons/cedis.png').default;
 export const HazegenIcon = require('../Assets/Images/icons/code.png').default;
 export const CovidIcon =
     require('../Assets/Images/icons/coronavirus.png').default;
-export const GalleryIcon =
-    require('../Assets/Images/icons/gallery.png').default;
+
 export const GhanaIcon = require('../Assets/Images/icons/ghana.png').default;
 export const TofieIcon = require('../Assets/Images/icons/house.png').default;
 export const MedicIcon = require('../Assets/Images/icons/medicine.png').default;
@@ -80,7 +79,7 @@ export const Languages = [
     { item: 'Java Springboot', img: Spring },
     { item: 'GraphQL', img: GraphQL },
     { item: 'Next JS', img: Nextjs },
-    { item: 'Jest', img: Jest },
+    { item: 'React Testing Library', img: ReactTest },
     { item: 'Flutter', img: Flutter },
     { item: 'PGSQL', img: PG },
     { item: 'MongoDB', img: MongoDB },
@@ -198,15 +197,5 @@ export const Projects = [
         img: Spawn,
         url: 'https://www.npmjs.com/package/spawn-password',
         icon: SpawnIcon
-    },
-    {
-        name: 'Gallery',
-        type: 'Frontend Web project',
-        tech: ['HTML', 'Bootstrap CSS'],
-        desc: 'This is a simple website i created to display pictures in a masonry view ',
-        note: '',
-        img: Gallery,
-        url: 'https://gallery.hazelprojects.xyz/',
-        icon: GalleryIcon
     }
 ];
