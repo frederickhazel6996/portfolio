@@ -7,7 +7,7 @@ import {
     WixImage,
     Server1Image,
     Adobe,
-    Figma,
+    AWSIcon1,
     Meister,
     Flutter,
     Languages,
@@ -259,6 +259,43 @@ const Home = () => {
                             <ul className="dev__icons">
                                 {LanguagesFrameworks}
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="ninthSection">
+                <div className="container second__section">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="second__section__header">
+                                Certifications
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row mt-5">
+                        <div className="col-12 col-lg-4 mb-2 fadeIn">
+                            <div className="second__section__images__container">
+                                <img
+                                    src={AWSIcon1}
+                                    alt="aws"
+                                    className="ninth__section__images"
+                                />
+                            </div>
+                            <div className="second__section__secondary__header mt-2">
+                                AWS Certified Cloud Practitioner
+                            </div>
+                            <div className="second__section__secondary mt-2">
+                                AWS Certified Cloud Practitioner validates cloud
+                                fluency and foundational AWS knowledge.
+                            </div>
+                            <div className="text-center">
+                                <a
+                                    href=" https://www.credly.com/badges/b2882d4e-63d9-4319-a884-99d30e46c85c/public_url"
+                                    className="focus__text__link"
+                                    target="_blank">
+                                    Verify
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

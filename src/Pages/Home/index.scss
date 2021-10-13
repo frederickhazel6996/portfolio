@@ -104,6 +104,9 @@
     .second__section__images {
         height: 50px;
     }
+    .ninth__section__images {
+        height: 90px;
+    }
     .second__section__secondary {
         text-align: center;
     }
@@ -173,6 +176,10 @@
 }
 .focus__text {
     color: $primary-color;
+}
+.focus__text__link {
+    color: $primary-color;
+    text-decoration: none;
 }
 
 .fourth__section {

@@ -64,6 +64,8 @@ export const MedicIcon = require('../Assets/Images/icons/medicine.png').default;
 export const SpawnIcon = require('../Assets/Images/icons/password.png').default;
 export const RocketIcon = require('../Assets/Images/icons/rocket.png').default;
 export const ShopIcon = require('../Assets/Images/icons/shop.png').default;
+export const AWSIcon1 = require('../Assets/Images/cert/aws1.png').default;
+export const Dockericon = require('../Assets/Images/docker.png').default;
 
 export const Languages = [
     { item: 'TypeScript', img: JavaScript },
@@ -72,7 +74,7 @@ export const Languages = [
     { item: 'CSS/SCSS', img: Sass },
     { item: 'Bootstrap', img: Bootstrap },
     { item: 'Chakra UI', img: Chakra },
-    { item: 'Materialize Css', img: Material },
+    /*  { item: 'Materialize Css', img: Material }, */
     { item: 'ReactJS', img: ReactImage },
     { item: 'Node Js(Express JS)', img: Express },
     { item: 'Strapi JS', img: Strapi },
@@ -84,13 +86,14 @@ export const Languages = [
     { item: 'PGSQL', img: PG },
     { item: 'MongoDB', img: MongoDB },
     { item: 'AWS', img: AWS },
-    { item: 'Azure', img: Azure, type: 'extra' },
+    /*  { item: 'Azure', img: Azure, type: 'extra' }, */
     { item: 'DigitalOcean', img: Digital },
+    { item: 'Docker', img: Dockericon },
     { item: 'Heroku', img: Heroku },
     { item: 'VS Code', img: VS },
     { item: 'Postman', img: Postman },
     { item: 'Adobe XD', img: Adobe },
-    { item: 'IntelliJ', img: Intel, type: 'extra' },
+    /* { item: 'IntelliJ', img: Intel, type: 'extra' }, */
     { item: 'WebPack', img: Webpack },
     { item: 'Swagger', img: Swagger },
     { item: 'Wix', img: Wix, type: 'extra' }
