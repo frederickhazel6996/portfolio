@@ -1,13 +1,14 @@
-#Use existing docker image as base
-FROM node:14-alpine
 
-WORKDIR /usr/app
-#Download and install dependency
 
-COPY ./packgae.json ./
+# BUILD PHASE
+FROM node:14-alpine as builder
+WORKDIR '/app'
+COPY ./package.json ./
 RUN npm install
-COPY ./ ./
+COPY . .
+RUN npm run build
 
-#Tell image what to do when it starts as container
+# RUN PHASE
 
-CMD ["npm","start"]
+FROM nginx
+COPY --from=builder /app/build /usr/share/nginx/html

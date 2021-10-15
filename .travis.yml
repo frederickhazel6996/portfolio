@@ -1,0 +1,8 @@
+sudo: required #Anytime you use docker you need sudo permission
+services:
+    - docker
+before_install:
+    - docker build -t frederickhazel6996/portfolio -f Dockerfile.dev . #Builds docker file
+
+script:
+    - docker run frederickhazel6996/portfolio npm run test -- --coverage
