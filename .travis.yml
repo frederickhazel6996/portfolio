@@ -10,10 +10,10 @@ script:
 deploy:
     provider: elasticbeanstalk
     region: 'us-east-2'
-    app: 'react'
-    env: 'React-env'
+    app: 'lol'
+    env: 'Lol-env'
     bucket_name: 'elasticbeanstalk-us-east-2-425535899823'
-    bucket_path: 'portfolio2'
+    bucket_path: 'lol'
     on:
         branch: master
     access_key_id: $AWS_ACCESS_KEY
