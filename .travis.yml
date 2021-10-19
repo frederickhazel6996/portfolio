@@ -6,15 +6,18 @@ before_install:
 
 script:
     - docker run myapp npm run test -- --watchAll=false
+# deploy:
+#     provider: elasticbeanstalk
+#     region: 'us-east-2'
+#     app: 'lol'
+#     env: 'Lol-env'
+#     bucket_name: 'elasticbeanstalk-us-east-2-425535899823'
+#     bucket_path: 'lol'
+#     on:
+#         branch: master
+#     access_key_id: $AWS_ACCESS_KEY
+#     secret_access_key: $AWS_SECRET_KEY
 
 deploy:
-    provider: elasticbeanstalk
-    region: 'us-east-2'
-    app: 'lol'
-    env: 'Lol-env'
-    bucket_name: 'elasticbeanstalk-us-east-2-425535899823'
-    bucket_path: 'lol'
-    on:
-        branch: master
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
+    provider: heroku
+    api_key: $HEROKU_API_KEY
