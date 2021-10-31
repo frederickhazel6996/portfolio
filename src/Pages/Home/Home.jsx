@@ -87,7 +87,7 @@ const Home = () => {
                             <div className="first__section__buttons slideUp">
                                 <a
                                     className="btn btn-lg btn-outline-primary me-3 my__cv"
-                                    href="https://drive.google.com/file/d/1s1QHPUJjNwDJ--LK3gcUlKUoXFwS2wrS/view?usp=sharing"
+                                    href="https://drive.google.com/file/d/1O_0QKAhKHtTCHQrvY1olBmPVl7ee7Vv9/view?usp=sharing"
                                     target="_blank"
                                     rel="noreferrer">
                                     My CV
@@ -785,8 +785,17 @@ const Home = () => {
                                 Email me at
                             </div>
                             <div className="email">
-                                <a href="mailto:  frederick_hazel@hotmail.com">
-                                    frederick_hazel@hotmail.com{' '}
+                                <a href="mailto:  frederickhazel23@gmail.com">
+                                    frederickhazel23@gmail.com{' '}
+                                    <i class="fas fa-external-link-alt ms-2"></i>
+                                </a>
+                            </div>
+                            <div className="sixth__section__header__extra mt-5">
+                                Phone
+                            </div>
+                            <div className="email">
+                                <a href="tel:6823443549">
+                                    (682)-344-3549
                                     <i class="fas fa-external-link-alt ms-2"></i>
                                 </a>
                             </div>
